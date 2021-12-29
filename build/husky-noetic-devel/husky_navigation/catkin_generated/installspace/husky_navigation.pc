@@ -1,0 +1,8 @@
+prefix=/home/huy/ros1_workspaces/simulation_ws/install
+
+Name: husky_navigation
+Description: Description of husky_navigation
+Version: 0.6.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 
