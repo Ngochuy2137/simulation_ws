@@ -63,7 +63,7 @@ CATKIN_SKIP_TESTING:BOOL=OFF
 CATKIN_SYMLINK_INSTALL:BOOL=OFF
 
 //List of ';' separated packages to build
-CATKIN_WHITELIST_PACKAGES:STRING=my_costmap_2d
+CATKIN_WHITELIST_PACKAGES:STRING=safety_checker
 
 //Path to a file.
 CCD_INCLUDE_DIRS:PATH=/usr/include
@@ -944,7 +944,7 @@ laser_geometry_DIR:PATH=/opt/ros/noetic/share/laser_geometry/cmake
 layers_LIB_DEPENDS:STATIC=general;costmap_2d;
 
 //Path to a library.
-lib:FILEPATH=/opt/ros/noetic/lib/libvoxel_grid.so
+lib:FILEPATH=/opt/ros/noetic/lib/libxmlrpcpp.so
 
 //The directory containing a CMake configuration file for map_msgs.
 map_msgs_DIR:PATH=/opt/ros/noetic/share/map_msgs/cmake

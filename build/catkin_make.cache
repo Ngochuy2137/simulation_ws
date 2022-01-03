@@ -1,2 +1,2 @@
-costmap_2d
--DCATKIN_DEVEL_PREFIX=/home/huy/ros1_workspaces/simulation_ws/devel -DCMAKE_INSTALL_PREFIX=/home/huy/ros1_workspaces/simulation_ws/install -DCATKIN_WHITELIST_PACKAGES=my_costmap_2d -G Unix Makefiles
+safety_checker
+-DCATKIN_DEVEL_PREFIX=/home/huy/ros1_workspaces/simulation_ws/devel -DCMAKE_INSTALL_PREFIX=/home/huy/ros1_workspaces/simulation_ws/install -DCATKIN_WHITELIST_PACKAGES=safety_checker -G Unix Makefiles
