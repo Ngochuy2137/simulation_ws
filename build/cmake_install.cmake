@@ -131,17 +131,7 @@ endif()
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
   include("/home/huy/ros1_workspaces/simulation_ws/build/gtest/cmake_install.cmake")
-  include("/home/huy/ros1_workspaces/simulation_ws/build/husky-noetic-devel/husky_desktop/cmake_install.cmake")
-  include("/home/huy/ros1_workspaces/simulation_ws/build/husky-noetic-devel/husky_simulator/cmake_install.cmake")
-  include("/home/huy/ros1_workspaces/simulation_ws/build/husky-noetic-devel/husky_msgs/cmake_install.cmake")
-  include("/home/huy/ros1_workspaces/simulation_ws/build/turtlebot3_simulations/turtlebot3_simulations/cmake_install.cmake")
-  include("/home/huy/ros1_workspaces/simulation_ws/build/husky-noetic-devel/husky_control/cmake_install.cmake")
-  include("/home/huy/ros1_workspaces/simulation_ws/build/husky-noetic-devel/husky_description/cmake_install.cmake")
-  include("/home/huy/ros1_workspaces/simulation_ws/build/husky-noetic-devel/husky_gazebo/cmake_install.cmake")
-  include("/home/huy/ros1_workspaces/simulation_ws/build/husky-noetic-devel/husky_navigation/cmake_install.cmake")
-  include("/home/huy/ros1_workspaces/simulation_ws/build/husky-noetic-devel/husky_viz/cmake_install.cmake")
-  include("/home/huy/ros1_workspaces/simulation_ws/build/turtlebot3_simulations/turtlebot3_fake/cmake_install.cmake")
-  include("/home/huy/ros1_workspaces/simulation_ws/build/turtlebot3_simulations/turtlebot3_gazebo/cmake_install.cmake")
+  include("/home/huy/ros1_workspaces/simulation_ws/build/costmap_2d/cmake_install.cmake")
 
 endif()
 

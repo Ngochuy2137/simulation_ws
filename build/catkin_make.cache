@@ -1,2 +1,2 @@
-husky-noetic-devel/husky_control:husky-noetic-devel/husky_description:husky-noetic-devel/husky_desktop:husky-noetic-devel/husky_gazebo:husky-noetic-devel/husky_msgs:husky-noetic-devel/husky_navigation:husky-noetic-devel/husky_simulator:husky-noetic-devel/husky_viz:turtlebot3_simulations/turtlebot3_fake:turtlebot3_simulations/turtlebot3_gazebo:turtlebot3_simulations/turtlebot3_simulations
--DCATKIN_DEVEL_PREFIX=/home/huy/ros1_workspaces/simulation_ws/devel -DCMAKE_INSTALL_PREFIX=/home/huy/ros1_workspaces/simulation_ws/install -G Unix Makefiles
+costmap_2d
+-DCATKIN_DEVEL_PREFIX=/home/huy/ros1_workspaces/simulation_ws/devel -DCMAKE_INSTALL_PREFIX=/home/huy/ros1_workspaces/simulation_ws/install -DCATKIN_WHITELIST_PACKAGES=my_costmap_2d -G Unix Makefiles

@@ -10,7 +10,7 @@ Panels:
         - /Sensing1/LaserScan1
         - /Navigation1
         - /Navigation1/Exploration1
-        - /Navigation1/Global Costmap1
+        - /Navigation1/Global Plan1
       Splitter Ratio: 0.49492400884628296
     Tree Height: 787
   - Class: rviz/Selection
@@ -223,7 +223,7 @@ Visualization Manager:
           Axis: Z
           Channel Name: intensity
           Class: rviz/LaserScan
-          Color: 204; 0; 0
+          Color: 0; 255; 0
           Color Transformer: FlatColor
           Decay Time: 0
           Enabled: true
@@ -344,12 +344,12 @@ Visualization Manager:
           Class: rviz/Map
           Color Scheme: costmap
           Draw Behind: false
-          Enabled: false
+          Enabled: true
           Name: Local Costmap
           Topic: /move_base/local_costmap/costmap
           Unreliable: false
           Use Timestamp: false
-          Value: false
+          Value: true
         - Alpha: 1
           Buffer Length: 1
           Class: rviz/Path
@@ -420,7 +420,7 @@ Visualization Manager:
   Global Options:
     Background Color: 48; 48; 48
     Default Light: true
-    Fixed Frame: odom
+    Fixed Frame: map
     Frame Rate: 30
   Name: root
   Tools:
@@ -442,7 +442,7 @@ Visualization Manager:
   Views:
     Current:
       Class: rviz/Orbit
-      Distance: 57.651153564453125
+      Distance: 38.96968078613281
       Enable Stereo Rendering:
         Stereo Eye Separation: 0.05999999865889549
         Stereo Focal Distance: 1
@@ -450,17 +450,17 @@ Visualization Manager:
         Value: false
       Field of View: 0.7853981852531433
       Focal Point:
-        X: 1.979886770248413
-        Y: -4.1980299949646
-        Z: -1.5566636323928833
+        X: 1.606328010559082
+        Y: -6.856661796569824
+        Z: -1.589251160621643
       Focal Shape Fixed Size: true
       Focal Shape Size: 0.05000000074505806
       Invert Z Axis: false
       Name: Current View
       Near Clip Distance: 0.009999999776482582
-      Pitch: 1.5547995567321777
+      Pitch: 1.5697963237762451
       Target Frame: <Fixed Frame>
-      Yaw: 4.725398540496826
+      Yaw: 4.730401992797852
     Saved: ~
 Window Geometry:
   Displays:
