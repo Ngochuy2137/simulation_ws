@@ -1,0 +1,75 @@
+global_frame: odom
+robot_base_frame: base_link
+update_frequency: 4.0
+publish_frequency: 3.0
+
+#set if you want the voxel map published
+publish_voxel_map: false
+
+#set to true if you want to initialize the costmap from a static map
+# static_map: false
+
+#begin - COMMENT these lines if you set static_map to true
+rolling_window: true
+width: 6.0
+height: 6.0
+resolution: 0.05
+
+transform_tolerance: 0.5
+obstacle_range: 5.5
+raytrace_range: 6.0
+footprint: [[-5, -0.33], [-5, 0.33], [0.5, 0.33], [0.5, -0.33]]
+footprint_padding: 0.01
+# inflation_radius: 1.0
+# cost_scaling_factor: 10.0
+# lethal_cost_threshold: 100
+
+obstacles_laser:
+    observation_sources: base_scan
+    base_scan: {
+      sensor_frame: base_laser,
+      data_type: LaserScan, 
+      topic: /scan, 
+      expected_update_rate: 1,
+      observation_persistence: 0.0, 
+      marking: true, 
+      clearing: true, 
+      inf_is_valid: true
+    }
+inflation:
+    inflation_radius: 1.0
+
+plugins:
+  - {name: obstacles_laser,           type: "costmap_2d::ObstacleLayer"}
+  - {name: inflation,                 type: "costmap_2d::InflationLayer"}
+
+# sudo apt-get install ros-noetic-teb-local-planner \
+# ros-noetic-neo-local-planner \
+  # ros-noetic-navigation \
+# ros-noetic-carrot-planner \
+# ros-noetic-turtlebot3 \
+# ros-noetic-turtlebot3-navigation \
+# ros-noetic-move-base \
+# ros-noetic-clear-costmap-recovery \
+# ros-noetic-rtabmap-ros \
+# ros-noetic-costmap-converter \
+# ros-noetic-dwa-local-planner \
+# ros-noetic-global-planner \
+# ros-noetic-mbf-costmap-core \
+# ros-noetic-move-slow-and-clear \
+# ros-noetic-rotate-recovery \
+# ros-noetic-navfn \
+# ros-noetic-base-local-planner \
+# ros-noetic-nav-core \
+# ros-noetic-costmap-2d \
+
+# sudo apt-get install ros-$ROS_DISTRO-ament-cmake-catch2 ros-$ROS_DISTRO-rmf-building-sim-gazebo-plugins \
+#     ros-$ROS_DISTRO-rmf-building-map-msgs ros-$ROS_DISTRO-rmf-building-map-tools \
+#     ros-$ROS_DISTRO-rmf-cmake-uncrustify ros-$ROS_DISTRO-rmf-dispenser-msgs \
+#     ros-$ROS_DISTRO-rmf-door-msgs ros-$ROS_DISTRO-rmf-fleet-adapter \
+#     ros-$ROS_DISTRO-rmf-fleet-msgs ros-$ROS_DISTRO-rmf-lift-msgs \
+#     ros-$ROS_DISTRO-rmf-task-msgs ros-$ROS_DISTRO-rmf-traffic-msgs \
+#     ros-$ROS_DISTRO-rmf-traffic-ros2 ros-$ROS_DISTRO-rmf-traffic \
+#     ros-$ROS_DISTRO-rmf-utils ros-$ROS_DISTRO-rmf-traffic-editor \
+#     ros-$ROS_DISTRO-rmf-demos-gz ros-$ROS_DISTRO-rmf-charger-msgs  \
+#     ros-$ROS_DISTRO-rmf-fleet-adapter-python ros-$ROS_DISTRO-rmf-workcell-msgs \
