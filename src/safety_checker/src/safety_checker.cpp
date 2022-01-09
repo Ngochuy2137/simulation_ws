@@ -1,6 +1,5 @@
 #include <nav_msgs/Path.h>
 #include <nav_msgs/OccupancyGrid.h>
-// #include<geometry_msgs/PoseStamped.h>
 #include "std_msgs/String.h"
 #include <typeinfo>
 #include <ros/ros.h>
@@ -28,7 +27,7 @@ class costPose
 public:
   worldPosition w_position;
   mapPosition m_position;
-  unsigned char cost;
+  unsigned int cost;
 };
 
 const int num_poses = 100;
