@@ -11,6 +11,8 @@ find_package(catkin REQUIRED COMPONENTS
   roscpp
   rospy
   std_msgs
+  tf2_ros
+  costmap_2d
 )
 
 ## System dependencies are found with CMake's conventions
@@ -119,3 +121,6 @@ include_directories(
 add_executable(safety_checker src/safety_checker.cpp)
 target_link_libraries(safety_checker ${catkin_LIBRARIES})
 # add_dependencies(safety_checker beginner_tutorials_generate_messages_cpp)
+
+add_executable(safety_checker_2 src/safety_checker_2.cpp)
+target_link_libraries(safety_checker_2 ${catkin_LIBRARIES})
