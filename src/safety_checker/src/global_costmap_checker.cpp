@@ -84,9 +84,10 @@ nav_msgs::OccupancyGrid costmap;
 //------------------    Funtion declarations   ------------------//
 bool my_worldToMap(double wx, double wy, unsigned int& mx, unsigned int& my)
 {
+  cout << map_info.origin_x << " " << map_info.origin_y << " " << map_info.resolution << " " << map_info.width << " " << map_info.height << endl;
   if (wx < map_info.origin_x || wy < map_info.origin_y)
   {
-    cout << "converting ERROR 1" << endl;
+    ROS_ERROR("converting ERROR 1");
     cout << "   wx wy:  " << wx << " " << wy << endl;
     cout << "   origin: " << map_info.origin_x << " " << map_info.origin_y << endl;
     cout << "   ---" << endl;
@@ -99,7 +100,7 @@ bool my_worldToMap(double wx, double wy, unsigned int& mx, unsigned int& my)
   {
     return true;
   }
-  cout << "converting ERROR 2" << endl;
+  ROS_ERROR("converting ERROR 2");
   cout << "   mx my:  " << mx << " " << my << endl;
   cout << "   size:   " << map_info.width << " " << map_info.height << endl;
   cout << "   ---" << endl;
@@ -129,7 +130,7 @@ void check_costmap_cb(const nav_msgs::OccupancyGrid::ConstPtr& msg)
             float(costmap.info.resolution),
             int(costmap.info.width),
             int(costmap.info.height));
-  cout << "LOADING " << COSTMAP_TOPIC << endl;
+  cout << "   LOADING " << COSTMAP_TOPIC << endl;
 }
 
 int main(int argc, char **argv)
