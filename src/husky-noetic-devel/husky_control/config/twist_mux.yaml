@@ -10,9 +10,14 @@ topics:
 - name    : external
   topic   : cmd_vel
   timeout : 0.5
-  priority: 1
+  priority: 255
 locks:
 - name    : e_stop
   topic   : e_stop
   timeout : 0.0
-  priority: 255
+  priority: 155
+
+- name    : safety_checker
+  topic   : cmd_vel/safety_checker
+  timeout : 0.0
+  priority: 155
